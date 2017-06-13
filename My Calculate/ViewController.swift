@@ -27,10 +27,21 @@ class ViewController: UIViewController {
         
         
         // Echo input values
+        print("String input")
         print("strNumber1 ==> \(strNumber1)")
         print("strNumber2 ==> \(strNumber2)")
         
+        // Convert Sting to Int
+        intNumber1 = Int(strNumber1)!
+        intNumber2 = Int(strNumber2)!
         
+        // Echo converted Int values
+        print("Int Value")
+        print("intNumber1 ==> \(intNumber1)")
+        print("intNumber2 ==> \(intNumber2)")
+
+        
+
         
     }   // answerButton listener
     
