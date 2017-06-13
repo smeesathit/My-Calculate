@@ -53,7 +53,7 @@
                                 <rect key="frame" x="49" y="240" width="177" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DnI-zG-8jA">
                                 <rect key="frame" x="266" y="105" width="91" height="42"/>
@@ -62,6 +62,9 @@
                                 <state key="normal" title="Answer">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="answerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Ie-0E-Noc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.79650259426665637" green="0.99275124073028564" blue="0.98059173436858527" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -83,6 +86,10 @@
                             <constraint firstItem="5tn-Et-iKu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="zXS-Tl-AbM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="num1TextField" destination="h5l-kA-Frf" id="6Yy-BE-u96"/>
+                        <outlet property="num2TextField" destination="jsL-jM-gSr" id="DTP-JQ-UDy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
