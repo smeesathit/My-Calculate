@@ -89,6 +89,7 @@
                     <connections>
                         <outlet property="num1TextField" destination="h5l-kA-Frf" id="6Yy-BE-u96"/>
                         <outlet property="num2TextField" destination="jsL-jM-gSr" id="DTP-JQ-UDy"/>
+                        <outlet property="outputLabel" destination="LKy-AW-hx7" id="mt6-6r-gbP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

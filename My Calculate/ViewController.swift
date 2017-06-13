@@ -11,15 +11,24 @@ import UIKit
 class ViewController: UIViewController {
     
     // Implicit varible declaration
+    // Int variables
     var intNumber1 = 0
     var intNumber2: Int = 0
+    var intAnswer: Int = 0
+    
+    // String Varibles
     var strNumber1 = ""
     var strNumber2: String = ""
+    var strAnswer: String = ""
+    
+    // Initial view
+    // Bind view to object
+    @IBOutlet weak var outputLabel: UILabel!
+    // Define TextField objects
+    @IBOutlet weak var num1TextField: UITextField!
+    
+    @IBOutlet weak var num2TextField: UITextField!
 
-    
-    
-    
-    
     
     @IBAction func answerButton(_ sender: Any) {
         strNumber1 = num1TextField.text!
@@ -39,18 +48,22 @@ class ViewController: UIViewController {
         print("Int Value")
         print("intNumber1 ==> \(intNumber1)")
         print("intNumber2 ==> \(intNumber2)")
-
         
+        // Set answer and show
+            // Add numbers
+        intAnswer = intNumber1 + intNumber2
+        print("Int output value")
+        print("intAnswer ==> \(intAnswer)")
+            // Convert Int output to String
+        strAnswer = String(intAnswer)
 
-        
+            // Set output label text
+        outputLabel.text = strAnswer
+
+        // outputLabel.text = String(intNumber1 + intNumber2)
     }   // answerButton listener
     
-    // Define TextField objects
-    @IBOutlet weak var num1TextField: UITextField!
     
-    
-    @IBOutlet weak var num2TextField: UITextField!
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
